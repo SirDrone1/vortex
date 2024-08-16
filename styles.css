@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #0d141d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: default;
+    user-select: none;
+}
+
+.logo img {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    transform: translateX(-50px);
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: transparent;
+    height: 50px;
+    width: 230px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    transition: .1s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #8bacd8;
+}
+
+.dashboard-button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    width: 180px;
+    height: 50px;
+    background: #7b7bd7;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.dashboard-button:hover {
+    cursor: pointer;
+    background: #34346b;
+}
+
+.discord-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.discord-text {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.discord-description {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 18px; 
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: rgba(13, 20, 29, 0.5);
+    color: #646363;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    transition: .3s;
+}
+
+.footer-nav {
+    margin-bottom: 10px;
+    color: #646363;
+}
+
+.footer-nav a {
+    color: #fff;
+    color: #646363;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+    background-color: rgba(13, 20, 29, 1);
+}
+
+
+.copyright {
+    font-size: 14px;
+}
